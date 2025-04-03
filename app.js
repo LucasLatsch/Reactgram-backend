@@ -13,7 +13,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // cors
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(
+  cors({
+    credentials: true,
+    origin: [
+      "http://localhost:3000",
+      "https://reactgram-frontend-navy.vercel.app/",
+    ],
+  })
+);
 
 //uploads directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
