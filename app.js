@@ -18,7 +18,7 @@ app.use(
     credentials: true,
     origin: [
       "http://localhost:3000",
-      "https://reactgram-frontend-navy.vercel.app/",
+      "https://reactgram-frontend-k7kzf77eb-lucas-projects-a0d6a70a.vercel.app",
     ],
   })
 );
